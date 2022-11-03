@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+<%= @coordinates.to_json %>
+<div>
+  <%= link_to "Edit this post", edit_post_path(@post) %> |
+  <%= link_to "Back to posts", posts_path %>
+
+  <%= button_to "Destroy this post", @post, method: :delete %>
+</div>
+<div id='map' style='width: 400px; height: 300px;'
+data-controller="map" data-map-marker-value="<%=@coordinates.to_json%>"
+></div>
+
+
