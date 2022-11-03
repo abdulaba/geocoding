@@ -8,7 +8,7 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log(this.markerValue.lat)
+
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWJkdWxhYmEiLCJhIjoiY2w4cHg2ZGVyMXR0azN2cDRiaGszemdiciJ9.GMr4gUtLVUQ-skCzx-ZCxA';
     this.map = new mapboxgl.Map({
       container: this.element, // container ID
